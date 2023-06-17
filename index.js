@@ -15,6 +15,9 @@ app.use(cors());
 app.use(express.json());
 
 // Available Routes
+app.use('/', express.static(path.join(__dirname, 'public')))
+
+app.use('/', require('./routes/root'))
 app.use("/api/auth", require("./routes/auth"));
 app.use("/api/notes", require("./routes/notes"));
 
