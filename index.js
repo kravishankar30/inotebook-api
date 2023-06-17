@@ -6,7 +6,6 @@ const path = require('path')
 const PORT = process.env.PORT || 4000;
 var cors = require("cors");
 
-console.log(process.env.NODE_ENV);
 connectToMongo();
 
 
